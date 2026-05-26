@@ -1,32 +1,17 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Doniyor Jumaniyazov | Portfolio',
-  description: 'Amaliy matematika bo\'yicha talaba, matematika va informatika o\'qituvchisi...',
-  generator: 'v0.app',
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+  description: "Amaliy matematika bo'yicha talaba, matematika va informatika o'qituvchisi",
+  verification: {
+    google: 'SYZl3xfsY3Q10siy92tkQ-X0aNhF43eNxz0H68h7dZY',
   },
+  generator: 'v0.app',
 }
 
 export default function RootLayout({
@@ -36,12 +21,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="uz">
-      <head>
-        {/* Mana shu yerga shundoq tashlaysan: */}
-        <meta name="google-site-verification" content="SYZl3xfsY3Q10siy92tkQ-X0aNhF43eNxz0H68h7dZY" />
-      </head>
-      <body>
+      <body className={inter.className}>
         {children}
+        <Analytics />
       </body>
     </html>
   )
