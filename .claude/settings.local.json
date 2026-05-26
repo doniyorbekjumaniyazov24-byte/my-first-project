@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls /Users/jumaniyazovdoniyorbek/Desktop/)",
+      "Bash(find /Users/jumaniyazovdoniyorbek -name \"hero.tsx\" 2>/dev/null | head -10)",
+      "Bash(unzip -o \"portfolio-website.zip\" -d portfolio-extracted)"
+    ]
+  }
+}
