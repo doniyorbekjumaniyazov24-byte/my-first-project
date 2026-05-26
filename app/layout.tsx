@@ -9,9 +9,6 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 export const metadata = {
   title: 'Doniyor Jumaniyazov | Portfolio',
   description: 'Amaliy matematika bo\'yicha talaba, matematika va informatika o\'qituvchisi...',
-  verification: {
-    google: "SYZl3xfsY3Q10siy92tkQ-X0aNhF43eNxz0H68h7dZY",
-  },
   generator: 'v0.app',
   icons: {
     icon: [
@@ -34,14 +31,17 @@ export const metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
-    <html lang="uz" className="bg-background dark">
-      <body className="font-sans antialiased">
+    <html lang="uz">
+      <head>
+        {/* Mana shu yerga shundoq tashlaysan: */}
+        <meta name="google-site-verification" content="SYZl3xfsY3Q10siy92tkQ-X0aNhF43eNxz0H68h7dZY" />
+      </head>
+      <body>
         {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
   )
