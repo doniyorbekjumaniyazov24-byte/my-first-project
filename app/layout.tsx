@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="uz">
       {/* Google aytganidek, meta tegi aynan shu yerda, head ichida bo'ladi */}
       <head>
-        <meta name="google-site-verification" content="nODkNnsIsinEQYKx6Eojl-imRJ7u2RZKmb4ua5Uj5Os" />
+        <meta name="google-site-verification" content="SYZl3xfsY3Q10siy92tkQ-X0aNhF43eNxz0H68h7dZY" />
       </head>
       <body className={inter.className}>
         {children}
