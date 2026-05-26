@@ -9,8 +9,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: 'Doniyor Jumaniyazov | Matematik, Dasturchi, O\'qituvchi',
   description: 'Amaliy matematika bo\'yicha talaba, matematika va informatika o\'qituvchisi. SQL Engine, EdTech va boshqa loyihalar muallifi.',
-  verification: {
-    google-site-verification=SYZl3xfsY3Q10siy92tkQ-X0aNhF43eNxz0H68h7dZY},
+  verification: { google-site-verification=SYZl3xfsY3Q10siy92tkQ-X0aNhF43eNxz0H68h7dZY },
   generator: 'v0.app',
   icons: {
     icon: [
